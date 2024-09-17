@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage
+    x:Class="MennuDesplegableDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:MennuDesplegableDemo.MVVM.ViewModels">
+
+    <FlyoutPage.BindingContext>
+        <vm:MenuViewModel />
+    </FlyoutPage.BindingContext>
+    <FlyoutPage.Flyout>
+        <ContentPage
+            Title="Menú">
+            <Grid
+                Padding="20"
+                BackgroundColor="#4C657E"
+                RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="1" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="auto" />
+                    <RowDefinition
+                        Height="1" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="*" />
+                </Grid.ColumnDefinitions>
+                <!--  Imagen circular  -->
+                <Image
+                    Grid.Row="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Aspect="AspectFill"
+                    HeightRequest="100"
+                    Source="dotnet_dog.png"
+                    WidthRequest="100">
+                    <Image.Clip>
+                        <EllipseGeometry
+                            Center="50,50"
+                            RadiusX="50"
+                            RadiusY="50" />
+                    </Image.Clip>
+                </Image>
+                <!--  Nombre  -->
+                <Label
+                    Grid.Row="1"
+                    Text="Andrea Osorio Pineda"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="18" />
+                <!--  Correo  -->
+                <Label
+                    Grid.Row="2"
+                    Text="Andrea9@hotmail.com"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="14" />
+                <!--  Editar  -->
+                <Image
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Source="boligrafo.png"
+                    WidthRequest="40" />
+
+                <!--  División  -->
+                <BoxView
+                    Grid.Row="4"
+                    HeightRequest="1"
+                    Color="Black" />
+
+                <!--  Botones del menú  -->
+                <Image
+                    Grid.Row="5"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Source="carpetavacia.png"
+                    WidthRequest="40" />
+                <Label
+                    Grid.Row="5"
+                    Text="Expedientes"
+                    TextColor="White"
+                    Margin="55,0,0,0"
+                    VerticalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            NumberOfTapsRequired="1"
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Image
+                    Grid.Row="6"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Source="contrasena.png"
+                    WidthRequest="40" />
+                <Label
+                    Grid.Row="6"
+                    Text="Cambiar Contraseña"
+                    TextColor="White"
+                    Margin="55,0,0,0"
+                    VerticalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            NumberOfTapsRequired="1"
+                            
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Image
+                    Grid.Row="7"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Source="informacion.png"
+                    WidthRequest="40" />
+                <Label
+                    Grid.Row="7"
+                    Text="Acerca de"
+                    TextColor="White"
+                    Margin="55,0,0,0"
+                    VerticalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            NumberOfTapsRequired="1"
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Image
+                    Grid.Row="8"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Source="cerrarsesion.png"
+                    WidthRequest="40" />
+                <Label
+                    Grid.Row="8"
+                    Text="Cerrar sesion"
+                    TextColor="White"
+                    Margin="55,0,0,0"
+                    VerticalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            NumberOfTapsRequired="1"
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <!--  División  -->
+                <BoxView
+                    Grid.Row="9"
+                    HeightRequest="1"
+                    Color="Black" />
+
+                <!--  Sección de almacenamiento  -->
+                <Label
+                    Grid.Row="10"
+                    Text="Almacenamiento Actual"
+                    TextColor="White"
+                    FontAttributes="Bold" />
+                <Image
+                    Grid.Row="11"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Source="carpetavacia.png"
+                    WidthRequest="40" />
+                <Label
+                    Grid.Row="11"
+                    Text="1 de 3 Expedientes"
+                    TextColor="White"
+                    Margin="55,0,0,0"
+                    VerticalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Image
+                    Grid.Row="12"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Source="cerrarsesion.png"
+                    WidthRequest="40" />
+                <Label
+                    Grid.Row="12"
+                    Text="20 de 500MB"
+                    TextColor="White"
+                    Margin="55,0,0,0"
+                    VerticalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage
+                    BackgroundColor="Black">
+                    <StackLayout>
+                        <Label
+                            Text="Bienvenido a la página principal"
+                            TextColor="White"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>
