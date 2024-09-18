@@ -513,6 +513,19 @@
         <Setter Property="TextColor" Value="White" />
         <Setter Property="VerticalOptions" Value="Center" />
     </Style>
+    <Style
+        x:Key="HorizontalStyle"
+        TargetType="StackLayout">
+        <Setter Property="Orientation" Value="Horizontal" />
+        <Setter Property="Spacing" Value="20" />
+    </Style>
+    <Style
+        x:Key="BoxStyle"
+        TargetType="BoxView">
+        <Setter Property="VerticalOptions" Value="Start" />
+        <Setter Property="HeightRequest" Value="1" />
+        <Setter Property="Color" Value="Black" />
+    </Style>
 
 
 </ResourceDictionary>
