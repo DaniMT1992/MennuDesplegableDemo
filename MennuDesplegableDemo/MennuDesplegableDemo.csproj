@@ -57,12 +57,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\about.svg" />
+	  <None Remove="Resources\Images\actual_file.svg" />
 	  <None Remove="Resources\Images\boligrafo.png" />
 	  <None Remove="Resources\Images\carpetavacia.png" />
 	  <None Remove="Resources\Images\cerrarsesion.png" />
+	  <None Remove="Resources\Images\change_password.svg" />
 	  <None Remove="Resources\Images\contrasena.png" />
+	  <None Remove="Resources\Images\edit_profile.svg" />
+	  <None Remove="Resources\Images\email.svg" />
+	  <None Remove="Resources\Images\files.svg" />
 	  <None Remove="Resources\Images\informacion.png" />
+	  <None Remove="Resources\Images\logo.svg" />
+	  <None Remove="Resources\Images\logout.svg" />
 	  <None Remove="Resources\Images\migracion.png" />
+	  <None Remove="Resources\Images\password.svg" />
+	  <None Remove="Resources\Images\use_file.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
